@@ -20,15 +20,12 @@ namespace ProducerConsumer
 
             t1.Name = "Producer";
             t2.Name = "Splitter";
-            t4.Name = "Soda sorter";
 
             t1.Start();
             t2.Start();
-            t4.Start();
 
             t1.Join();
             t2.Join();
-            t4.Join();
         }
 
         static void Produce()
